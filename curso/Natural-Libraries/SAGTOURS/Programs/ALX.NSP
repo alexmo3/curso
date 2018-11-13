@@ -15,4 +15,5 @@ end-define
 read SAG-TOURS-E-CONTRACT
   write   CONTRACT-ID
 end-read  
+*
 END
