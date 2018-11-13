@@ -14,7 +14,7 @@ GLOBAL USING ST----G0
 LOCAL USING LAYOUT-L
 LOCAL USING YA---ML0
 LOCAL USING YA---VL0
-local
+local 
 1 i        (n2)
 END-DEFINE
 * ----------------------------------------------------

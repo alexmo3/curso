@@ -10,7 +10,7 @@ define data
 local 
 1 SAG-TOURS-E-CONTRACT view of SAG-TOURS-E-CONTRACT
   2 CONTRACT-ID  
-end-define
+end-define 
 read SAG-TOURS-E-CONTRACT
   write   CONTRACT-ID
 end-read  
