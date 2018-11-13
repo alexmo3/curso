@@ -1,0 +1,40 @@
+ DB: 020 FILE: 027  - SAG-TOURS-E-CONTRACT             DEFAULT SEQUENCE:
+
+T L DB Name                              F Leng  S D Remark
+- - -- --------------------------------  - ----  - - ------------------------
+*      >Natural Source Header 000000
+*      :CP
+*      
+*      
+*      <Natural Source Header 
+  1 B1 CONTRACT-ID                       P  6.0  N D
+  1 B2 CONTRACT-TYPE                     A    1  N
+*      'A' = 'charter contract',  'B'
+*      = 'Sailor contract'
+  1 B3 PRICE                             P 10.3  N
+  1 B4 DID-CONDITIONS                    A    8  N D
+*      ID of document including
+*      contract conditions
+  1 B5 DATE-RESERVATION                  N  8.0  N D
+  1 B6 DATE-BOOKING                      N  8.0  N D
+  1 B7 DATE-CANCELLATION                 N  8.0  N D
+G 1 B8 DEPOSIT
+  2 B9 DATE-D                            N  8.0  N
+  2 CA AMOUNT-D                          P 10.3  N
+G 1 CB PAYMENT-OF-BALANCE
+  2 CC DATE-P                            N  8.0  N
+  2 CD AMOUNT-P                          P 10.3  N
+  1 CE ID-CUSTOMER                       N  8.0  N D
+*      PERSON-ID of customer
+  1 CF ID-CRUISE                         N  8.0  N D
+*      CRUISE-ID, subject of contract
+  1 CG ID-AGENCY                         A    8  N D
+*      COMPANY-ID of agency, which
+*      regotiate the contract
+  1 T3 CONTRACT-TIMESTAMP                T   12  N
+*      used for Natural Constract
+  1 CH CONTRACT-TYPE-SP                  A    5    S
+*      -------- SOURCE FIELD(S) -------
+*      CONTRACT-TYPE(1-1)
+*      CONTRACT-ID(1-4)
+******DDM OUTPUT TERMINATED******

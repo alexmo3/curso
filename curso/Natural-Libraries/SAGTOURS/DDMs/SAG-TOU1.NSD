@@ -1,0 +1,46 @@
+ DB: 000 FILE: 027  - SAG-TOURS-E-YACHT                DEFAULT SEQUENCE:
+
+T L DB Name                              F Leng  S D Remark
+- - -- --------------------------------  - ----  - - ------------------------
+*      >Natural Source Header 000000
+*      :CP
+*      
+*      
+*      <Natural Source Header
+  1 DB YACHT-ID                          N  8.0  N D
+  1 DC YACHT-NAME                        A   30  N D
+  1 DE YACHT-BRANCH                      A    1  N
+*      'A' = 'charter yacht',  'B' =
+*      'sailor yacht'
+  1 DN ID-CH-BASE                        A    8  N D
+*      only for
+*      YACHT-BRANCHE='A'-COMPANY-ID of
+*      charter b
+  1 DP ID-S-OWNER                        N  8.0  N D
+*      only for
+*      YACHT-CRANCH='B'-PERSON-ID of
+*      yacht owner
+  1 DM DID-DESCRIPTION                   A    8  N D
+  1 DD YACHT-TYPE                        A   30  N D
+  1 DF LENGTH                            P  3.2  N
+*      in meters
+  1 DG WIDTH                             P  3.2  N
+*      in meters
+  1 DH DRAFT                             P  3.2  N
+*      in meters
+  1 DI SAIL-SURFACE                      P  3.0  N
+*      in square meters
+  1 DJ MOTOR                             P  3.0  N
+*      output in HP
+  1 DK HEAD-ROOM                         P  3.2  N
+*      headroom in saloon in meters
+  1 DL BUNKS                             P  3.0  N
+*      number of bunks
+  1 T4 YACHT-TIMESTAMP                   T   12  N
+*      used for Natural Constract
+  1 DQ YACHT-NAME-PH                     A   20  N
+  1 DR YACHT-BRANCH-SP                   A    9    S
+*      -------- SOURCE FIELD(S) -------
+*      YACHT-BRANCH(1-1)
+*      YACHT-ID(1-8)
+******DDM OUTPUT TERMINATED******

@@ -1,0 +1,118 @@
+INFO:  Mapconverter Log Generated on :Tue Nov 13 12:24:33 CLST 2018
+INFO: ---------------------------------------------------
+INFO: Rules File= C:/Users/aol/workspace_CURSO/.naturalone/apache-tomcat/webapps/cisnatural/njxmapconverter/convrules/convrulesDefault.xml
+INFO: ---------------------------------------------------
+INFO: Map File  = C:\Users\aol\workspace_CURSO\.naturalone\apache-tomcat\webapps\cisnatural/cis/temp/nat/MAYA--M1.xml
+INFO: ITEM;ROW;COL;NAME;RULENAMES/MESSAGES
+INFO: ;;;;Natsource_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;1;1;#PROG;Ofield_rule Ifname_rule IfOffset_rule AfixType_rule
+INFO: 1;1;27;*** SAG - TOURS ***;Titlevar_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;1;65;*DAT4E;Ofield_rule SysvartypeA_rule IfOffset_rule SYS_VARname_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;2;1;*PROGRAM;Ofield_rule SysvartypeA_rule IfOffset_rule SYS_VARname_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;2;27;#TITLE;Ofield_rule Ifname_rule IfOffset_rule AfixType_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;2;65;*TIMX;Ofield_rule IfOffset_rule SYS_VARname_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;5;3;Identification;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;7;10;Yacht-ID.......;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;7;27;YACHT-M.YACHT-ID;Ifield_rule UPPERCASE_rule IfOffset_rule CV_rule NType_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;8;10;Yacht Name.....;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;8;27;YACHT-M.YACHT-NAME;Ifield_rule UPPERCASE_rule IfOffset_rule CV_rule AfixType_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;9;10;Yacht Branch...;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;9;27;YACHT-M.YACHT-BRANCH;Ifield_rule UPPERCASE_rule IfOffset_rule CV_rule AfixType_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;9;30;(A Charter/ B Sailor...;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;11;3;Description;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;13;10;Yachttype......;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;13;27;YACHT-M.YACHT-TYPE;Ifield_rule UPPERCASE_rule IfOffset_rule CV_rule AfixType_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;14;10;Length.........;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;14;27;YACHT-M.LENGTH;Ifield_rule UPPERCASE_rule IfOffset_rule CV_rule PType_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;14;34;m;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;15;10;Width..........;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;15;27;YACHT-M.WIDTH;Ifield_rule UPPERCASE_rule IfOffset_rule CV_rule PType_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;15;34;m;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;16;10;Draft..........;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;16;27;YACHT-M.DRAFT;Ifield_rule UPPERCASE_rule IfOffset_rule CV_rule PType_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;16;34;m;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;17;10;Sail Surface...;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;17;27;YACHT-M.SAIL-SURFACE;Ifield_rule UPPERCASE_rule IfOffset_rule CV_rule PType_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;17;34;sqm;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;18;10;Motor..........;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;18;27;YACHT-M.MOTOR;Ifield_rule UPPERCASE_rule IfOffset_rule CV_rule PType_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;18;34;KW;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;19;10;Headroom.......;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;19;27;YACHT-M.HEAD-ROOM;Ifield_rule UPPERCASE_rule IfOffset_rule CV_rule PType_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;19;34;m;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;20;10;Bunks..........;Label_rule
+WARNING: ;;;;Invalid widthfactor2 null
+WARNING: ;;;;Invalid widthfactor2 null
+INFO: 1;20;27;YACHT-M.BUNKS;Ifield_rule UPPERCASE_rule IfOffset_rule CV_rule PType_rule
+INFO: Finished Tue Nov 13 12:24:34 CLST 2018
+INFO: ---------------------------------------------------

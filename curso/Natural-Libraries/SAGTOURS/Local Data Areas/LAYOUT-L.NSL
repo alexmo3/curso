@@ -1,0 +1,11 @@
+/*C               O                */** New Local Data Area LAYOUT-L.                                 DA:00.00ED:00.00PF:WNV:08030200
+/*C               O                */**
+/* >Natural Source Header 000000
+/* :Mode S
+/* :CP
+/* <Natural Source Header
+/*C               O                */** :author Administrator
+/*C               O     s here     */* TODO Enter your data definition
+/*DF              0     A         8  1#PROG
+/*DF              0     A        20  1#TITLE
+/*DF              0     A         3  1#COMMAND

@@ -1,0 +1,12 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Copycode DFPF--C0.
+/**
+/** :author Administrator
+/* TODO Enter your code here
+SET KEY ALL
+SET KEY ENTR NAMED 'OK'
+SET KEY PF3    NAMED 'Quit'
+SET KEY PF12  NAMED 'Canc.'

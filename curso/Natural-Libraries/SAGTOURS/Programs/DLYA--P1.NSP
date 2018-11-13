@@ -1,0 +1,80 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Program DLYA--P1.
+/**
+/** :author Administrator
+/* TODO Enter your code here
+* 
+* Program for the function Modify / Delete Yacht
+* -----------------------------------------------------
+DEFINE DATA
+GLOBAL USING ST----G0
+LOCAL USING LAYOUT-L
+LOCAL USING YA---ML0
+LOCAL USING YA---VL0
+END-DEFINE
+* ----------------------------------------------------
+*
+INCLUDE DFPF--C0
+*
+MOVE *PROGRAM TO #PROG
+MOVE '  Delete Yacht' TO #TITLE
+* ----------------------------------------------------
+REPEAT
+  MOVE (AD=I) TO #KEY-C
+  MOVE (AD=P) TO #DATA-C
+  INPUT WITH TEXT #G-MESSAGE-TEXT  USING MAP 'MAYA--M1'
+  RESET #G-MESSAGE
+*
+  DECIDE FOR FIRST CONDITION
+    WHEN *PF-KEY = 'PF3' OR = 'PF12'
+      FETCH 'MEYA--P0'
+    WHEN *PF-KEY = 'ENTR'
+*
+      IF YACHT-M.YACHT-ID = 0
+        REINPUT 'Please enter Yacht-ID > 0'
+      END-IF
+*
+      PERFORM PROCESS-RECORD
+    WHEN NONE
+      REINPUT 'Invalid PF-KEY '
+  END-DECIDE
+END-REPEAT
+*
+* ====================================================
+*   S U B R O U T I N E S
+* ----------------------------------------------------
+*
+DEFINE SUBROUTINE PROCESS-RECORD
+FIND YACHT-V WITH YACHT-ID = YACHT-M.YACHT-ID
+  IF NO RECORDS FOUND
+    REINPUT 'Yacht-ID does not exist'
+  END-NOREC
+  MOVE BY NAME YACHT-V TO YACHT-M
+  REPEAT
+    MOVE (AD=P) TO #KEY-C
+    MOVE (AD=P) TO #DATA-C
+    INPUT USING MAP 'MAYA--M1'
+    DECIDE FOR FIRST CONDITION
+      WHEN *PF-KEY = 'ENTR'
+        IGNORE
+      WHEN *PF-KEY = 'PF3'
+        MOVE BY NAME YACHT-M TO YACHT-V
+        DELETE
+        END TRANSACTION
+        RESET YACHT-M
+        ESCAPE ROUTINE
+      WHEN *PF-KEY = 'PF12'
+        BACKOUT TRANSACTION
+        FETCH 'MEYA--P0'
+      WHEN NONE
+        REINPUT 'Invalid PF-KEY'
+    END-DECIDE
+*
+  END-REPEAT
+END-FIND
+END-SUBROUTINE
+*
+END

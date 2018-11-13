@@ -1,0 +1,61 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+* MAP2: PROTOTYPE VERSION 820 --- CREATED BY ONE 8.3.3 ---
+* INPUT USING MAP 'XXXXXXXX'
+*     #COMMAND #PROG #TITLE
+DEFINE DATA PARAMETER
+1 #COMMAND (A003)
+1 #PROG (A008)
+1 #TITLE (A020)
+END-DEFINE
+FORMAT PS=022 LS=080 ZP=OFF SG=OFF KD=ON IP=OFF
+* MAP2: MAP PROFILES *****************************        200***********
+* .TTAAAMMOO   D I D I N D I D I        ?_)^&:+(                       *
+* 024079LAYOUT-MN0NNUCN             X        01 SYSPROF YR             *
+************************************************************************
+INPUT          (     IP=OFF                                           /*
+                                                                       )
+ 001T #PROG /*.01D008 A008 .
+      (AD=ODR )
+ 027T '*** SAG - TOURS ***'
+ 065T *DAT4E /*.01S015 A010 .
+      (AD=OD )
+/
+ 001T *PROGRAM /*.01S011 A008 .
+      (AD=OD AL=011 )
+ 027T #TITLE /*.01D020 A020 .
+      (AD=ODL )
+ 065T *TIMX /*.01S008 T    .
+      (AD=OD )
+/
+/
+/
+/
+/
+ 029T 'AY - Add Yacht'
+/
+/
+ 029T 'MY - Modify Yacht'
+/
+/
+ 029T 'DY - Delete Yacht'
+/
+/
+ 029T 'SY - Show Yacht'
+/
+/
+/
+/
+/
+/
+/
+/
+ 002T 'Command.......'
+ 016T #COMMAND /*.99D003 A003 .
+      (AD=MDRT )
+/
+* MAP2: VALIDATION *****************************************************
+* MAP2: END OF MAP *****************************************************
+END

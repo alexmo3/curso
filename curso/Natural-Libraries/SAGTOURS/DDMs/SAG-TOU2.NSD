@@ -1,0 +1,67 @@
+ DB: 000 FILE: 027  - SAG-TOURS-E-CRUISE               DEFAULT SEQUENCE:
+
+T L DB Name                              F Leng  S D Remark
+- - -- --------------------------------  - ----  - - ------------------------
+*      >Natural Source Header 000000
+*      :CP
+*      
+*      
+*      <Natural Source Header
+  1 CI CRUISE-ID                         N  8.0  N D
+  1 CJ CRUISE-TYPE                       A    1  N N
+*      'A' = 'charter cruise',  'B'
+*      ='sailor cruise'
+  1 CK CRUISE-STATUS                     A    1  N
+*      0 = planned, 1 = available, 2 =
+*      sold, 3 = removed
+G 1 CL START
+  2 CM START-DATE                        N  8.0    D
+  2 CN START-TIME                        N  6.0  N
+G 1 CO END
+  2 CP END-DATE                          N  8.0  N D
+  2 CQ END-TIME                          N  6.0  N
+  1 CR START-HARBOR                      A   20    D
+  1 CS DESTINATION-HARBOR                A   20    D
+  1 CT ID-YACHT                          N  8.0  N D
+*      ID of yacht sailing cruise
+  1 CU ID-PREDECESSOR                    N  8.0  N D
+*      ID of predecessor cruise
+  1 CV ID-SUCCESSOR                      N  8.0  N D
+*      ID of successor cruise
+G 1 CW CHARTER-CRUISE
+*      only for CRUISE-TYPE = 'A'
+  2 CX CHARTER-YACHT-TYPE                A   30
+  2 CY ID-CHARTER-BASE                   A    8
+*      the combination of this two IDs
+*      defines the CH-PRI
+G 1 CZ SAILING-CRUISE
+*      only for CRUISE-TYP = 'B'
+  2 C0 ID-SKIPPER                        N  8.0  N D
+*      PERSON-ID of skipper
+  2 C1 CRUISE-PRICE                      P 10.3  N
+  2 C2 BUNK-NUMBER                       P  3.0  N
+P 1 C3 SAILOR
+  2 C4 AGE                               P  2.0  N
+  2 C5 S-NAME                            A   30  N
+  2 C6 EXPERIENCE                        A    1  N
+*      'Y' if sailor has sailor
+*      experience
+M 2 C7 LANGUAGES                         A    3  N
+  2 C8 ID-CONTRACT                       P  6.0  N D
+  1 T6 CRUISE-TIMESTAMP                  T   12  N
+*      used for Natural Constract
+  1 EG CRUISE-TYPE-SP                    A    9    S
+*      -------- SOURCE FIELD(S) -------
+*      CRUISE-TYPE(1-1)
+*      CRUISE-ID(1-8)
+  1 DA CHARTER-PRICES-SP                 A   38    S
+*      -------- SOURCE FIELD(S) -------
+*      CHARTER-YACHT-TYPE(1-30)
+*      ID-CHARTER-BASE(1-8)
+  1 EF START-DATE-DESTINATION            A   49    S
+*      -------- SOURCE FIELD(S) -------
+*      CRUISE-TYPE(1-1)
+*      START-HARBOR(1-20)
+*      START-DATE(1-8)
+*      DESTINATION-HARBOR(1-20)
+******DDM OUTPUT TERMINATED******

@@ -1,0 +1,94 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Program LICO--P1.
+/**
+/** :author Administrator
+/* TODO Enter your code here
+* 
+* List: Contracts by date
+*
+DEFINE DATA
+GLOBAL USING ST----G0
+LOCAL  USING CO---VL0
+END-DEFINE
+*
+FORMAT PS=21
+*
+WRITE TITLE 'Sales list from: ' #G-START-DATE 
+  / '            to: ' #END-DATE
+SKIP 1
+*
+AT TOP OF PAGE
+  WRITE 'Page: ' *PAGE-NUMBER 65T *DATD
+    / 65T *TIMX
+    // 'Date of ' 5X 'Contract-' 28T 'Agency' 65T 'Price'
+    / 'Booking   ' 5X ' Number'
+    / '-'(72)
+END-TOPPAGE
+*
+AT END OF PAGE
+  #SELECT := 'Y' 
+  INPUT 'Continue? (Y/N)' #SELECT (AD=MIT'_')
+  IF #SELECT = 'N'
+    ESCAPE BOTTOM IMMEDIATE
+  END-IF
+END-ENDPAGE
+*
+INPUT #G-START-DATE             /* to test the program  
+MOVE #G-START-DATE TO #END-DATE
+MOVE 1231 TO #R-E-MON-DAY
+*
+READ.
+READ(50) CONTRACT BY DATE-BOOKING
+      STARTING FROM #G-START-DATE ENDING AT #END-DATE
+    WHERE DATE-CANCELLATION EQ 0
+*
+* Read agency name
+*
+  PERFORM AGENCY-NAME
+*
+  DISPLAY NOTITLE NOHDR DATE-BOOKING (IS=ON)
+    CONTRACT-ID
+    AGENCY.COMPANY-NAME /C-CITY
+    PRICE
+*
+AT START OF DATA
+    WRITE 'Top of output:' /
+  END-START
+* 
+  AT BREAK OF DATE-BOOKING
+    SKIP 1
+  END-BREAK
+*
+  AT BREAK OF DATE-BOOKING /6/
+    SKIP 2
+    MOVE OLD(DATE-BOOKING) TO #DATE-N
+    WRITE 'Sales of month: ' #R-DAT-MON  T*PRICE SUM(PRICE)
+        / '          Year: ' #R-DAT-YEAR
+    NEWPAGE
+  END-BREAK
+*
+  AT END OF DATA
+    SKIP 2
+    WRITE 'Total sales of year:' #R-DAT-YEAR T*PRICE TOTAL(PRICE)
+  END-ENDDATA
+*
+END-READ
+*
+IF *COUNTER (READ.) = 0
+   MOVE 'No data existing' TO #G-MESSAGE-TEXT 
+END-IF 
+*
+FETCH 'MELI--P0'
+*
+*
+* Inline Subroutines
+*
+DEFINE SUBROUTINE AGENCY-NAME
+  FIND AGENCY WITH COMPANY-ID = CONTRACT.ID-AGENCY
+  END-FIND
+END-SUBROUTINE
+*
+END

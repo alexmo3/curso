@@ -1,0 +1,17 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Program ALX.
+/**
+/** :author AOL
+/* TODO Enter your code here
+define data
+local 
+1 SAG-TOURS-E-CONTRACT view of SAG-TOURS-E-CONTRACT
+  2 CONTRACT-ID  
+end-define
+read SAG-TOURS-E-CONTRACT
+  write   CONTRACT-ID
+end-read  
+END

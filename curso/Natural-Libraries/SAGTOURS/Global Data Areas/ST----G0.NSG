@@ -1,0 +1,14 @@
+/*C               O                */** New Global Data Area ST----G0.                                DA:00.00ED:00.00PF:WNV:08030200
+/*C               O                */**
+/* >Natural Source Header 000000
+/* :Mode S
+/* :CP
+/* <Natural Source Header
+/*C               O                */** :author Administrator
+/*C               O     s here     */* TODO Enter your data definition
+/*DS              0                  1#G-MESSAGE
+/*DK              2     A        70  2#G-MESSAGE-TEXT
+/*DK              2     A        32  2#G-OPERAND1
+/*DK              2     A        32  2#G-OPERAND2
+/*DK              2     N         8  2#G-MESSAGE-NR
+/*DF              0     N         8  1#g-start-date

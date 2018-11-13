@@ -1,0 +1,200 @@
+<natpage visiblevalueifundefined="true" natsource="AAYA--M1" natsinglebyte="true" xmlns:njx="http://www.softwareag.com/njx/njxMapConverter">
+    <titlebar name=" SAG - TOURS " align="center">
+    </titlebar>
+    <pagebody>
+        <itr>
+            <field valueprop="XPROG" width="80" displayonly="true" noborder="true" datatype="string 8" njx:natname="#PROG">
+            </field>
+            <hdist width="180">
+            </hdist>
+            <hdist width="380">
+            </hdist>
+            <field valueprop="DAT4E" width="150" displayonly="true" noborder="true" njx:natsysvar="*DAT4E" njx:natstringtype="A">
+            </field>
+        </itr>
+        <itr>
+            <field valueprop="PROGRAM" width="110" displayonly="true" noborder="true" njx:natsysvar="*PROGRAM" njx:natstringtype="A">
+            </field>
+            <hdist width="150">
+            </hdist>
+            <field valueprop="XTITLE" width="200" displayonly="true" noborder="true" datatype="string 20" njx:natname="#TITLE">
+            </field>
+            <hdist width="180">
+            </hdist>
+            <field valueprop="TIMX" width="80" displayonly="true" noborder="true" njx:natsysvar="*TIMX">
+            </field>
+        </itr>
+        <itr>
+            <label name=" " width="100" asplaintext="true">
+            </label>
+        </itr>
+        <itr>
+            <label name=" " width="100" asplaintext="true">
+            </label>
+        </itr>
+        <itr>
+            <hdist width="20">
+            </hdist>
+            <label name="Identification" width="140" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+        </itr>
+        <itr>
+            <label name=" " width="100" asplaintext="true">
+            </label>
+        </itr>
+        <itr>
+            <hdist width="90">
+            </hdist>
+            <label name="Yacht-ID......." width="150" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+            <hdist width="20">
+            </hdist>
+            <field valueprop="YACHT-M.YACHT-ID" width="80" statusprop="STATUS_XKEY-C" uppercase="true" datatype="N8" njx:natcomment="statusprop=STATUS_XKEY-C">
+            </field>
+        </itr>
+        <itr>
+            <hdist width="90">
+            </hdist>
+            <label name="Yacht Name....." width="150" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+            <hdist width="20">
+            </hdist>
+            <field valueprop="YACHT-M.YACHT-NAME" width="300" statusprop="STATUS_XDATA-C" uppercase="true" datatype="string 30" njx:natcomment="statusprop=STATUS_XDATA-C">
+            </field>
+        </itr>
+        <itr>
+            <hdist width="90">
+            </hdist>
+            <label name="Yacht Branch..." width="150" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+            <hdist width="20">
+            </hdist>
+            <field valueprop="YACHT-M.YACHT-BRANCH" width="15" statusprop="STATUS_XDATA-C" uppercase="true" datatype="string 1" njx:natcomment="statusprop=STATUS_XDATA-C">
+            </field>
+            <hdist width="15">
+            </hdist>
+            <label name="(A Charter/ B Sailor)" width="210" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+        </itr>
+        <itr>
+            <label name=" " width="100" asplaintext="true">
+            </label>
+        </itr>
+        <itr>
+            <hdist width="20">
+            </hdist>
+            <label name="Description" width="110" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+        </itr>
+        <itr>
+            <label name=" " width="100" asplaintext="true">
+            </label>
+        </itr>
+        <itr>
+            <hdist width="90">
+            </hdist>
+            <label name="Yachttype......" width="150" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+            <hdist width="20">
+            </hdist>
+            <field valueprop="YACHT-M.YACHT-TYPE" width="300" statusprop="STATUS_XDATA-C" uppercase="true" datatype="string 30" njx:natcomment="statusprop=STATUS_XDATA-C">
+            </field>
+        </itr>
+        <itr>
+            <hdist width="90">
+            </hdist>
+            <label name="Length........." width="150" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+            <hdist width="20">
+            </hdist>
+            <field valueprop="YACHT-M.LENGTH" width="60" statusprop="STATUS_XDATA-C" uppercase="true" datatype="P3.2" njx:natcomment="statusprop=STATUS_XDATA-C">
+            </field>
+            <hdist width="10">
+            </hdist>
+            <label name="m" width="15" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+        </itr>
+        <itr>
+            <hdist width="90">
+            </hdist>
+            <label name="Width.........." width="150" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+            <hdist width="20">
+            </hdist>
+            <field valueprop="YACHT-M.WIDTH" width="60" statusprop="STATUS_XDATA-C" uppercase="true" datatype="P3.2" njx:natcomment="statusprop=STATUS_XDATA-C">
+            </field>
+            <hdist width="10">
+            </hdist>
+            <label name="m" width="15" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+        </itr>
+        <itr>
+            <hdist width="90">
+            </hdist>
+            <label name="Draft.........." width="150" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+            <hdist width="20">
+            </hdist>
+            <field valueprop="YACHT-M.DRAFT" width="60" statusprop="STATUS_XDATA-C" uppercase="true" datatype="P3.2" njx:natcomment="statusprop=STATUS_XDATA-C">
+            </field>
+            <hdist width="10">
+            </hdist>
+            <label name="m" width="15" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+        </itr>
+        <itr>
+            <hdist width="90">
+            </hdist>
+            <label name="Sail Surface..." width="150" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+            <hdist width="20">
+            </hdist>
+            <field valueprop="YACHT-M.SAIL-SURFACE" width="30" statusprop="STATUS_XDATA-C" uppercase="true" datatype="P3" njx:natcomment="statusprop=STATUS_XDATA-C">
+            </field>
+            <hdist width="40">
+            </hdist>
+            <label name="sqm" width="30" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+        </itr>
+        <itr>
+            <hdist width="90">
+            </hdist>
+            <label name="Motor.........." width="150" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+            <hdist width="20">
+            </hdist>
+            <field valueprop="YACHT-M.MOTOR" width="30" statusprop="STATUS_XDATA-C" uppercase="true" datatype="P3" njx:natcomment="statusprop=STATUS_XDATA-C">
+            </field>
+            <hdist width="40">
+            </hdist>
+            <label name="KW" width="20" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+        </itr>
+        <itr>
+            <hdist width="90">
+            </hdist>
+            <label name="Headroom......." width="150" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+            <hdist width="20">
+            </hdist>
+            <field valueprop="YACHT-M.HEAD-ROOM" width="60" statusprop="STATUS_XDATA-C" uppercase="true" datatype="P3.2" njx:natcomment="statusprop=STATUS_XDATA-C">
+            </field>
+            <hdist width="10">
+            </hdist>
+            <label name="m" width="15" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+        </itr>
+        <itr>
+            <hdist width="90">
+            </hdist>
+            <label name="Bunks.........." width="150" asplaintext="true" labelstyle="font-family: Lucida Console">
+            </label>
+            <hdist width="20">
+            </hdist>
+            <field valueprop="YACHT-M.BUNKS" width="30" statusprop="STATUS_XDATA-C" uppercase="true" datatype="P3" njx:natcomment="statusprop=STATUS_XDATA-C">
+            </field>
+        </itr>
+    </pagebody>
+    <statusbar withdistance="false">
+    </statusbar>
+</natpage>

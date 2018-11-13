@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><natpage xmlns:njx="http://www.softwareag.com/njx/njxMapConverter" natsource="AAYA--M1" natsinglebyte="true">	<titlebar name=" SAG - TOURS " align="center">    </titlebar>	<pagebody>		<itr>
+<field width='80' njx:natname='#PROG' noborder='true' displayonly='true' valueprop='XPROG' datatype='string 8' ></field><hdist width='180' /><hdist width='380' /><field width='150' njx:natstringtype='A' noborder='true' displayonly='true' valueprop='DAT4E' njx:natsysvar='*DAT4E' ></field></itr>
+<itr>
+<field width='110' njx:natstringtype='A' noborder='true' displayonly='true' valueprop='PROGRAM' njx:natsysvar='*PROGRAM' ></field><hdist width='150' /><field width='200' njx:natname='#TITLE' noborder='true' displayonly='true' valueprop='XTITLE' datatype='string 20' ></field><hdist width='180' /><field width='80' noborder='true' displayonly='true' valueprop='TIMX' njx:natsysvar='*TIMX' ></field></itr>
+<itr>
+<label name=' ' width='100' asplaintext='true' ></label></itr>
+<itr>
+<label name=' ' width='100' asplaintext='true' ></label></itr>
+<itr>
+<hdist width='20' /><label name='Identification' width='140' labelstyle='font-family: Lucida Console' asplaintext='true' ></label></itr>
+<itr>
+<label name=' ' width='100' asplaintext='true' ></label></itr>
+<itr>
+<hdist width='90' /><label name='Yacht-ID.......' width='150' labelstyle='font-family: Lucida Console' asplaintext='true' ></label><hdist width='20' /><field uppercase='true' statusprop='STATUS_XKEY-C' njx:natcomment='statusprop=STATUS_XKEY-C' datatype='N8' width='80' valueprop='YACHT-M.YACHT-ID' ></field></itr>
+<itr>
+<hdist width='90' /><label name='Yacht Name.....' width='150' labelstyle='font-family: Lucida Console' asplaintext='true' ></label><hdist width='20' /><field uppercase='true' statusprop='STATUS_XDATA-C' njx:natcomment='statusprop=STATUS_XDATA-C' datatype='string 30' width='300' valueprop='YACHT-M.YACHT-NAME' ></field></itr>
+<itr>
+<hdist width='90' /><label name='Yacht Branch...' width='150' labelstyle='font-family: Lucida Console' asplaintext='true' ></label><hdist width='20' /><field uppercase='true' statusprop='STATUS_XDATA-C' njx:natcomment='statusprop=STATUS_XDATA-C' datatype='string 1' width='15' valueprop='YACHT-M.YACHT-BRANCH' ></field><hdist width='15' /><label name='(A Charter/ B Sailor)' width='210' labelstyle='font-family: Lucida Console' asplaintext='true' ></label></itr>
+<itr>
+<label name=' ' width='100' asplaintext='true' ></label></itr>
+<itr>
+<hdist width='20' /><label name='Description' width='110' labelstyle='font-family: Lucida Console' asplaintext='true' ></label></itr>
+<itr>
+<label name=' ' width='100' asplaintext='true' ></label></itr>
+<itr>
+<hdist width='90' /><label name='Yachttype......' width='150' labelstyle='font-family: Lucida Console' asplaintext='true' ></label><hdist width='20' /><field uppercase='true' statusprop='STATUS_XDATA-C' njx:natcomment='statusprop=STATUS_XDATA-C' datatype='string 30' width='300' valueprop='YACHT-M.YACHT-TYPE' ></field></itr>
+<itr>
+<hdist width='90' /><label name='Length.........' width='150' labelstyle='font-family: Lucida Console' asplaintext='true' ></label><hdist width='20' /><field uppercase='true' statusprop='STATUS_XDATA-C' njx:natcomment='statusprop=STATUS_XDATA-C' datatype='P3.2' width='60' valueprop='YACHT-M.LENGTH' ></field><hdist width='10' /><label name='m' width='15' labelstyle='font-family: Lucida Console' asplaintext='true' ></label></itr>
+<itr>
+<hdist width='90' /><label name='Width..........' width='150' labelstyle='font-family: Lucida Console' asplaintext='true' ></label><hdist width='20' /><field uppercase='true' statusprop='STATUS_XDATA-C' njx:natcomment='statusprop=STATUS_XDATA-C' datatype='P3.2' width='60' valueprop='YACHT-M.WIDTH' ></field><hdist width='10' /><label name='m' width='15' labelstyle='font-family: Lucida Console' asplaintext='true' ></label></itr>
+<itr>
+<hdist width='90' /><label name='Draft..........' width='150' labelstyle='font-family: Lucida Console' asplaintext='true' ></label><hdist width='20' /><field uppercase='true' statusprop='STATUS_XDATA-C' njx:natcomment='statusprop=STATUS_XDATA-C' datatype='P3.2' width='60' valueprop='YACHT-M.DRAFT' ></field><hdist width='10' /><label name='m' width='15' labelstyle='font-family: Lucida Console' asplaintext='true' ></label></itr>
+<itr>
+<hdist width='90' /><label name='Sail Surface...' width='150' labelstyle='font-family: Lucida Console' asplaintext='true' ></label><hdist width='20' /><field uppercase='true' statusprop='STATUS_XDATA-C' njx:natcomment='statusprop=STATUS_XDATA-C' datatype='P3' width='30' valueprop='YACHT-M.SAIL-SURFACE' ></field><hdist width='40' /><label name='sqm' width='30' labelstyle='font-family: Lucida Console' asplaintext='true' ></label></itr>
+<itr>
+<hdist width='90' /><label name='Motor..........' width='150' labelstyle='font-family: Lucida Console' asplaintext='true' ></label><hdist width='20' /><field uppercase='true' statusprop='STATUS_XDATA-C' njx:natcomment='statusprop=STATUS_XDATA-C' datatype='P3' width='30' valueprop='YACHT-M.MOTOR' ></field><hdist width='40' /><label name='KW' width='20' labelstyle='font-family: Lucida Console' asplaintext='true' ></label></itr>
+<itr>
+<hdist width='90' /><label name='Headroom.......' width='150' labelstyle='font-family: Lucida Console' asplaintext='true' ></label><hdist width='20' /><field uppercase='true' statusprop='STATUS_XDATA-C' njx:natcomment='statusprop=STATUS_XDATA-C' datatype='P3.2' width='60' valueprop='YACHT-M.HEAD-ROOM' ></field><hdist width='10' /><label name='m' width='15' labelstyle='font-family: Lucida Console' asplaintext='true' ></label></itr>
+<itr>
+<hdist width='90' /><label name='Bunks..........' width='150' labelstyle='font-family: Lucida Console' asplaintext='true' ></label><hdist width='20' /><field uppercase='true' statusprop='STATUS_XDATA-C' njx:natcomment='statusprop=STATUS_XDATA-C' datatype='P3' width='30' valueprop='YACHT-M.BUNKS' ></field></itr>
+			</pagebody>	<statusbar withdistance="false"/></natpage>

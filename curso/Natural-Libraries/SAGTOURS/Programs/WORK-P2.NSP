@@ -1,0 +1,23 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Program WORK-P2.
+/**
+/** :author Administrator
+/* TODO Enter your code here
+DEFINE DATA LOCAL
+1 YACHT VIEW OF SAG-TOURS-E-YACHT
+  2 YACHT-TYPE
+  2 YACHT-ID
+  2 LENGTH
+  2 WIDTH
+  2 SAIL-SURFACE
+END-DEFINE
+*
+FIND YACHT WITH YACHT-NAME = 'CARMEN'
+  DISPLAY YACHT-TYPE YACHT-ID LENGTH WIDTH SAIL-SURFACE
+END-FIND
+*
+
+END

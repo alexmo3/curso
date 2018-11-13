@@ -1,0 +1,30 @@
+/*C               O                */** New Local Data Area CO---VL0.                                 DA:00.00ED:00.00PF:WNV:08030200
+/*C               O                */**
+/* >Natural Source Header 000000
+/* :Mode S
+/* :CP
+/* <Natural Source Header
+/*C               O                */** :author Administrator
+/*C               O     s here     */* TODO Enter your data definition
+/*C               O      Definition*/*( imported data fields from Data Module SAG-TOU4
+/*DV              0                V 1CONTRACT                        SAG-TOURS-E-CONTRACT
+/*DD              2     P       6.0  2CONTRACT-ID
+/*DD              2     P      10.3  2PRICE
+/*DD              2     N       8.0  2DATE-BOOKING
+/*DD              2     N       8.0  2DATE-CANCELLATION
+/*DD              2     A         8  2ID-AGENCY
+/*C               O      Definition*/*) imported data fields from Data Module SAG-TOU4
+/*C               O      Definition*/*( imported data fields from Data Module SAG-TOU3
+/*DV              0                V 1AGENCY                          SAG-TOURS-E-COMPANY
+/*DD              2     A        30  2COMPANY-NAME
+/*DD              2     A        20  2C-CITY
+/*C               O      Definition*/*) imported data fields from Data Module SAG-TOU3
+/*DF              3     A         1  1#SELECT
+/*DF              3     N         8  1#DATE-N
+/*DRR             3                R 1#DATE-N                         /* REDEF. BEGIN : #DATE-N
+/*DKR             3     N         4  2#R-DAT-YEAR
+/*DKR             3     N         2  2#R-DAT-MON
+/*DF              3     N         8  1#END-DATE
+/*DRR             1                R 1#END-DATE                       /* REDEF. BEGIN : #END-DATE
+/*DKR             3     A         4  2X
+/*DKR             3     N         4  2#R-E-MON-DAY

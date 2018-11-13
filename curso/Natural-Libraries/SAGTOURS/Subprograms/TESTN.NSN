@@ -1,0 +1,13 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Subprogram TESTN.
+/**
+/** :author Administrator
+/* TODO Enter your code here
+define data parameter
+1 p1 (n4)
+end-define
+p1 := 42
+END

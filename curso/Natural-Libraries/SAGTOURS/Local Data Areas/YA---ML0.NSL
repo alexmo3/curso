@@ -1,0 +1,23 @@
+/*C               O                */** New Local Data Area YA---ML0.                                 DA:00.00ED:00.00PF:WNV:08030200
+/*C               O                */**
+/* >Natural Source Header 000000
+/* :Mode S
+/* :CP
+/* <Natural Source Header
+/*C               O                */** :author Administrator
+/*C               O     s here     */* TODO Enter your data definition
+/*DS              0                  1YACHT-M
+/*DK              2     N       8.0  2YACHT-ID
+/*DK              2     A        30  2YACHT-NAME
+/*DK              2     A         1  2YACHT-BRANCH
+/*DK              2     A         8  2ID-CH-BASE
+/*DK              2     A        30  2YACHT-TYPE
+/*DK              2     P       3.2  2LENGTH
+/*DK              2     P       3.2  2WIDTH
+/*DK              2     P       3.2  2DRAFT
+/*DK              2     P       3.0  2SAIL-SURFACE
+/*DK              2     P       3.0  2MOTOR
+/*DK              2     P       3.2  2HEAD-ROOM
+/*DK              2     P       3.0  2BUNKS
+/*DF              0     C            1#key-c
+/*DF              0     C            1#data-c
